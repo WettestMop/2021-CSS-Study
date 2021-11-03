@@ -1,13 +1,52 @@
+img {
+    width:1885px;
+    border-style:ridge;
+    border-radius: 15px;
+    border-color:#23272A;
 
-@keyframes slideInFromLeft {
-    0% {
-      transform: translateX(-100%);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
+}
 
 #header {
-    background-color:
+    display:block;
+    background-color: #2C2F33;
+    border-style:ridge;
+    border-radius: 15px;
+    border-color:#23272A;
+    height: 100px;
+    width: inherit 
+}
+body {
+    background-color:#23272A;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+        }
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+@font-face {
+    font-family: 'UnisanHCap';
+    src: url('fonts/uni-sans.heavy-caps\(1\).otf') format('opentype');
+}
+
+h1 {
+    font-family: "UnisanHCap";
+    color:white;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 1%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.infobox1 {
+    background-color: #2C2F33;
 }
